@@ -1,0 +1,5 @@
+rootProject.name = 'TheCraftyThief'
+include(":TCT-Engine")
+project(":TCT-Engine").projectDir = file("TCT-Engine")
+include(":TCT-Game")
+project(":TCT-Game").projectDir = file("TCT-Game")
