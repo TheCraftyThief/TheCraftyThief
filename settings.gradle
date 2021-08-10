@@ -1,5 +1,10 @@
-rootProject.name = 'TheCraftyThief'
 include(":TCT-Engine")
-project(":TCT-Engine").projectDir = file("TCT-Engine")
+var engine = project(":TCT-Engine")
 include(":TCT-Game")
-project(":TCT-Game").projectDir = file("TCT-Game")
+var game = project(":TCT-Game")
+rootProject.children.add(engine);
+rootProject.children.add(game)
+rootProject.children.forEach((project)->{
+    project.name = project.projectDir.name;
+})
+rootProject.name = 'TheCraftyThief'
