@@ -1,0 +1,6 @@
+[submodule "TCT-Engine"]
+	path = TCT-Engine
+	url = https://github.com/TheCraftyThief/TCT-Engine.git
+[submodule "TCT-Game"]
+	path = TCT-Game
+	url = https://github.com/TheCraftyThief/TCT-Game.git
