@@ -27,8 +27,8 @@ jobs:
           ./gradlew build
       - name: Move libs
         run: |
-          cp -r TCT-Engine/build/libs/
-          cp -r TCT-Game/build/libs/
+          cp -r TCT-Engine/build/libs/ .
+          cp -r TCT-Game/build/libs/ .
       - uses: actions/upload-artifact@v2
         with:
           name: artifact
